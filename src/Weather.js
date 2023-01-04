@@ -11,10 +11,16 @@ export default function Weather() {
               type="Search"
               placeholder="Type a city...."
               className="form-control"
+              id="search"
             />
           </div>
           <div className="col-sm-3">
-            <input type="Submit" value="Search" className="form-control" />
+            <input
+              type="Submit"
+              value="Search"
+              className="form-control"
+              id="submit"
+            />
           </div>
         </div>
       </form>
@@ -24,7 +30,10 @@ export default function Weather() {
         <li>Cloudy</li>
       </ul>
       <div className="row">
-        <div className="col-sm-6">🌤 7°F</div>
+        <div className="col-sm-6">
+          <span className="temperature">🌤 7°</span>
+          <span className="unit">F</span>
+        </div>
         <div className="col-sm-6">
           {" "}
           <ul>
@@ -34,7 +43,6 @@ export default function Weather() {
           </ul>
         </div>
       </div>
-      Hello From Weather
     </div>
   );
 }
