@@ -1,14 +1,13 @@
 import React from "react";
-
 import FormatDate from "./FormatDate";
 
 export default function WeatherInfo(props) {
   return (
-    <div>
-      <h1>{props.city}</h1>
+    <div className="WeatherInfo">
+      <h1>{props.defaultCity}</h1>
       <ul>
         <li>
-          <FormatDate date={props.weather.date} />
+          <FormatDate />
         </li>
         <li className="text-capitalize">{props.weather.description}</li>
       </ul>
