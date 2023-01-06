@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import FormatDate from "./FormatDate";
 import { scryRenderedComponentsWithType } from "react-dom/test-utils";
 
-export default function Weather() {
+export default function Weather(props) {
   let [city, setCity] = useState();
   const [weather, setWeather] = useState({ ready: false });
   function handleResponse(response) {
@@ -29,8 +30,8 @@ export default function Weather() {
 
   function search() {
     const apiKey = "3fo704e022f51t707bae6d88b742b43f";
-    let city = "Mammoth-Lakes";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -60,7 +61,9 @@ export default function Weather() {
         </form>
         <h1>{city}</h1>
         <ul>
-          <li>{weather.date}</li>
+          <li>
+            <FormatDate date={weather.date} />
+          </li>
           <li className="text-capitalize">{weather.description}</li>
         </ul>
         <div className="row">
