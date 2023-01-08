@@ -1,6 +1,6 @@
 a {
-  text-decoration: none;
-  color: rgb(83, 83, 154);
+  text-decoration: none !important;
+  color: rgb(83, 83, 154) !important;
 }
 .temperature {
   position: relative;
