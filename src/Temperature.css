@@ -1,0 +1,15 @@
+a {
+  text-decoration: none;
+  color: rgb(83, 83, 154);
+}
+.temperature {
+  position: relative;
+  top: 5px;
+  font-size: 56px !important;
+}
+
+.unit {
+  font-size: 18px !important;
+  position: relative !important;
+  top: -25px !important;
+}
