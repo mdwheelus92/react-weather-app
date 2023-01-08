@@ -11,10 +11,6 @@ export default function Forecast(props) {
     setLoaded(false);
   }, [props.coordinates]);
 
-  useEffect(() => {
-    setLoaded(false);
-  }, [props.icon]);
-
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
@@ -25,12 +21,13 @@ export default function Forecast(props) {
       <div className="weatherForecast">
         <div className="row">
           {forecast.map(function (dailyForecast, index) {
-            if (index < 5)
+            if (index < 5) {
               return (
                 <div className="col" key={index}>
                   <WeatherForecastDay data={dailyForecast} icon={props.icon} />
                 </div>
               );
+            }
           })}
         </div>
       </div>
