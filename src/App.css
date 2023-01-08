@@ -11,3 +11,7 @@ a {
   text-decoration: none;
   color: rgb(83, 83, 154);
 }
+footer {
+  padding-top: 10px;
+  font-size: 14px;
+}

@@ -1,0 +1,8 @@
+.weatherForecast {
+  text-align: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
