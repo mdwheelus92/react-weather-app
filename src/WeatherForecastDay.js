@@ -12,7 +12,7 @@ export default function WeatherForecastDay(props) {
     <div>
       <span className="day">{day()}</span>
       <div className="icon">
-        <img src={props.icon} width="75px" />
+        <img src={props.icon} width="75px" alt="icon" />
       </div>
       <span className="high">
         <strong>{Math.round(props.data.temperature.maximum)}°</strong> |
