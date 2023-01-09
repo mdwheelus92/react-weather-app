@@ -24,10 +24,11 @@ export default function Forecast(props) {
             if (index < 5) {
               return (
                 <div className="col" key={index}>
-                  <WeatherForecastDay data={dailyForecast} icon={props.icon} />
+                  <WeatherForecastDay data={dailyForecast} />
                 </div>
               );
             }
+            return null;
           })}
         </div>
       </div>
