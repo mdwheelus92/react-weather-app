@@ -7,8 +7,8 @@
   justify-content: center;
 }
 
-@media (max-width: 600px) {
-  .weatherForecast {
+@media (min-width: 768px) {
+  .divider {
     display: none;
   }
 }

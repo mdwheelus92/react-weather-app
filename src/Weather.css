@@ -13,7 +13,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
-.Weather ul {
+.Weather .tempColumn {
   padding-left: 0;
   padding-top: 0;
 }
@@ -34,9 +34,10 @@
   top: -25px;
   margin-left: 7px;
 }
-.weatherElements ul {
-  position: relative;
-  top: 500px;
+.Weather .elements {
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-left: 40px;
 }
 li {
   list-style: none;
@@ -48,9 +49,6 @@ li {
 
 @media (max-width: 600px) {
   .Weather h1 {
-    text-align: center;
-  }
-  .Weather ul {
     text-align: center;
   }
   #temperatureColumn {
@@ -70,5 +68,21 @@ li {
   .Weather .unit {
     position: relative;
     left: -10px;
+  }
+  .Weather .tempColumn {
+    text-align: center;
+  }
+  .Weather .elements {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .Weather h1 {
+    text-align: center;
+  }
+  .Weather .tempColumn {
+    text-align: center;
   }
 }

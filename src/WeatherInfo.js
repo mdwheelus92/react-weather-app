@@ -5,7 +5,7 @@ export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <h1>{props.data.city}</h1>
-      <ul>
+      <ul className="tempColumn">
         <li>
           <FormatDate date={props.data.date} />
         </li>
@@ -23,8 +23,8 @@ export default function WeatherInfo(props) {
             <span className="unit">°F</span>
           </span>
         </div>
-        <div className="col-sm-6" id="weatherElements">
-          <ul>
+        <div className="col-sm-6">
+          <ul className="elements">
             <li>Humidity: {props.data.humidity}%</li>
             <li>Wind: {Math.round(props.data.wind)} mph</li>
           </ul>
