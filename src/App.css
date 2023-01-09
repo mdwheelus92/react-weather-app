@@ -8,8 +8,12 @@ body {
   padding: 25px;
 }
 a {
-  text-decoration: none;
-  color: rgb(83, 83, 154);
+  text-decoration: none !important;
+  color: rgb(83, 83, 154) !important;
+}
+a:hover {
+  color: rgb(19, 19, 67);
+  transition: ease-in-out 200ms;
 }
 footer {
   padding-top: 10px;

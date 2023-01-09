@@ -25,24 +25,50 @@
   color: white;
 }
 .Weather .temperature {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 500;
 }
 .Weather .unit {
   font-size: 24px;
   position: relative;
-  top: -10px;
+  top: -25px;
   margin-left: 7px;
 }
-.weatherElements {
-  position: relative !important;
-  bottom: 50px !important;
+.weatherElements ul {
+  position: relative;
+  top: 500px;
 }
-
 li {
   list-style: none;
 }
 .icon-description {
   position: relative;
   top: -10px;
+}
+
+@media (max-width: 600px) {
+  .Weather h1 {
+    text-align: center;
+  }
+  .Weather ul {
+    text-align: center;
+  }
+  #temperatureColumn {
+    display: flex;
+    justify-content: center;
+  }
+  .Weather .icon-description {
+    text-align: center;
+    position: relative;
+    top: -2px;
+  }
+  .Weather .temperature {
+    position: relative;
+    left: -15px;
+  }
+
+  .Weather .unit {
+    position: relative;
+    left: -10px;
+  }
 }
