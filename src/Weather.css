@@ -36,7 +36,7 @@
 }
 .Weather .elements {
   margin: 0 auto;
-  padding-top: 18px;
+  padding-top: 20px;
   padding-left: 40px;
 }
 li {
@@ -44,7 +44,7 @@ li {
 }
 .icon-description {
   position: relative;
-  top: -10px;
+  top: -13px;
 }
 
 @media (max-width: 600px) {
